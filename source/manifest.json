@@ -1,15 +1,15 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "No Moments",
   "version": "1.0.0",
-  "description": "Removes moments from the Twitter menu'.",
+  "description": "Removes moments from the Twitter menu.",
   "browser_action": {
     "default_icon": "nm.png"
   },
 
   "content_scripts": [
     {
-      "matches": ["*://*/*"],
+      "matches": ["https://twitter.com/*"],
       "js": ["content_script.js"],
       "run_at": "document_end"
   }
