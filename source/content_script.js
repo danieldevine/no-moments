@@ -1,4 +1,4 @@
 window.addEventListener('load', function() {
-  var elem = document.getElementsByClassName("moments");
-  elem.remove();
+  var elem = document.querySelector('.moments');
+     elem.parentNode.removeChild(elem);
 });
